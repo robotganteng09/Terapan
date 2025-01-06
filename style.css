@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #4b4b4b, #b3a1c9);
+    color: #fff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.navbar .cart {
+    background: #e0e0e0;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.navbar .cart i {
+    margin-right: 5px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+.content .text {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+.content .text h1 {
+    font-size: 80px;
+    margin: 0;
+    line-height: 1;
+}
+.content .text p {
+    color: #ccc;
+    margin: 20px 0;
+}
+.content .text .price {
+    font-size: 40px;
+    margin: 20px 0;
+}
+.content .text .buy-now {
+    background: #e0e0e0;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.content .image {
+    position: relative;
+    z-index: 2;
+    top: 54px;
+}
+.content .image img {
+    width: 600px;
+    height: auto;
+    border-radius: 50%;
+}
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin-top: 20px;
+}
+.background-text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    pointer-events: none;
+}
+.circle-shape {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .text h1 {
+        font-size: 50px;
+    }
+    .content .image img {
+        width: 300px;
+    }
+    .background-text {
+        font-size: 100px;
+        top: 100px;
+    }
+    .circle-shape {
+        width: 300px;
+        height: 300px;
+    }
+
+    
+}
